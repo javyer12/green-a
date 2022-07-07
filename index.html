@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greates Phrases</title>
+    <!-- <script src="index.js" defer></script> -->
+
+    <style>
+        /* vars */
+        :root {
+            --header-footer-color: rgb(0, 173, 58);
+            --header-footer-color_resp: rgb(0, 0, 0);
+            --form_color: rgb(0, 0, 0);
+            --h1-resp: green;
+            --h1: rgb(0, 0, 0);
+        }
+
+
+        html {
+            font-family: sans-serif;
+        }
+
+        body {
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        header,
+        footer {
+            background-color: var(--header-footer-color);
+            color: white;
+            line-height: 100px;
+            padding: 0 20px;
+            font-family: fantasy;
+
+        }
+
+        .note-display {
+            display: grid;
+            grid-template-columns: 1.5fr 0.6fr;
+        }
+
+        .right_sec img {
+            max-width: fit-content;
+            max-height: fit-content;
+            margin-top: -100px;
+            margin-bottom: -150px;
+        }
+
+        form {
+            backdrop-filter: blur(26px) saturate(500%);
+            -webkit-backdrop-filter: blur(16px) saturate(500%);
+            /* background-color: rgba(246, 241, 241, 0); */
+            background-color: rgba(246, 241, 241, 0.6);
+            border-radius: 12px;
+            border: 1px solid rgba(209, 213, 219, 0.3);
+            padding: 20px;
+            color: var(--form_color);
+        }
+
+        header h1 {
+            backdrop-filter: blur(10%) saturate(200%);
+            -webkit-backdrop-filter: blur(16%) saturate(200%);
+            background-color: rgb(241, 246, 241);
+            opacity: 50%;
+            color: var(--h1);
+            border-radius: 12px;
+            border: 1px solid rgba(209, 213, 219, 0.3);
+            height: 15%;
+            margin: -15px !important;
+            text-align: center;
+        }
+
+        .new-note,
+        .note-display {
+            padding: 20px;
+        }
+
+        .new-note {
+            background: #ddd;
+            /* background-image: url("https://w0.peakpx.com/wallpaper/72/964/HD-wallpaper-green-a-estoy-loco-green-a-thumbnail.jpg");
+            background-blend-mode: color-dodge;*/
+            color: var(--form_color);
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        div {
+            margin-bottom: 10px;
+        }
+
+        #send_phrase {
+            background-color: #ddd;
+        }
+
+        .green_link a {
+            text-decoration: none;
+            font-size: 10px;
+            color: var(--form_color);
+            padding: 0;
+        }
+
+        .green_link h5 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 13px;
+            margin: 10px 0 0 5px;
+            padding: 0;
+        }
+
+        @media only screen and (max-width: 700px) {
+
+            header,
+            footer {
+                background-color: var(--header-footer-color_resp);
+                color: var(--h1-resp);
+                line-height: 100px;
+                padding: 20px;
+                font-family: fantasy;
+
+            }
+
+            header h1 {
+                background-color: var(--header-footer-color_resp);
+                background-color: rgba(255, 255, 255, 0.07);
+                opacity: 90%;
+                padding-top: 10px !important;
+                color: var(--h1);
+                border-radius: 12px;
+                border: 1px solid rgba(209, 213, 219, 0.3);
+                height: 1%;
+                text-align: center;
+            }
+
+
+            h1 {
+                color: var(--h1-resp) !important;
+            }
+
+            .right_sec {
+                visibility: hidden;
+            }
+
+            .note-display {
+                display: grid;
+                grid-template-columns: 0.8fr;
+                background-image: url('./green.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-bottom: -150px;
+            }
+
+            .new-note {
+                background-image: url("https://w0.peakpx.com/wallpaper/72/964/HD-wallpaper-green-a-estoy-loco-green-a-thumbnail.jpg");
+                color: white;
+            }
+
+            /* form {
+                color: white;
+            } */
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Greatest Grean A Phrases</h1>
+    </header>
+
+    <main>
+        <section class="note-display">
+            <div class="left_sec">
+
+                <h2>Phrases</h2>
+                <h4>Libertad</h4>
+                <p>Somos el eterno retorno que </br>
+                    Nietzsche narró, monopolios y reyes renacerán hoy </br>
+                    Pero con otros nombres les llamaremos.</p>
+                <ul>
+
+                </ul>
+            </div>
+            <div class="right_sec">
+                <img src="./green_a.png" alt="Green a" />
+            </div>
+        </section>
+        <section class="new-note">
+
+            <h2>Enter a new phrase</h2>
+            <form>
+                <div>
+                    <label for="title">Phrase Topic</label>
+                    <input id="title" type="text" required>
+                </div>
+                <div>
+                    <label for="body">Phrase</label>
+                    <input id="body" type="text" required>
+                </div>
+                <div>
+                    <button id="send_phrase">Add Phrase</button>
+                </div>
+                <div class="green_link">
+                    <h5>
+                        Don't you know who Green A is?
+                    </h5>
+                    <a href="https://www.youtube.com/watch?v=FBkPxwNl5b8&list=RDMM&index=1">Take a look</a>
+                </div>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright nobody. Use the code as you like.</p>
+    </footer>
+
+    <script>
+        const list = document.querySelector('ul');
+        const titleInput = document.querySelector('#title');
+        const bodyInput = document.querySelector('#body');
+        const form = document.querySelector('form');
+        const submitBtn = document.querySelector('form button');
+
+        let bd;
+
+        const openRequest = window.indexedDB.open('notes_db', 1);
+
+        openRequest.addEventListener('error', () => console.error("Database failed to open"));
+        openRequest.addEventListener('success', () => {
+            console.log('Database opened successfully');
+            db = openRequest.result;
+            displayData();
+        });
+        openRequest.addEventListener('upgradeneeded', e => {
+            db = e.target.result;
+            const objectStore = db.createObjectStore('notes_os', {
+                keyPath: 'id',
+                autoIncrement: true
+            });
+            objectStore.createIndex('title', 'title', { unique: false });
+            objectStore.createIndex('body', 'body', { unique: false });
+
+            console.log("data base setup complete");
+        });
+        form.addEventListener('submit', addData);
+
+        function addData(e) {
+            e.preventDefault();
+            const newItem = {
+                title: titleInput.value,
+                body: bodyInput.value,
+            };
+
+            // open a read/write db transaction, ready for adding the data
+            const transaction = db.transaction(['notes_os'], "readwrite");
+            const objectStore = transaction.objectStore("notes_os");
+            const addRequest = objectStore.add(newItem);
+
+            //// Clear the form, ready for adding the next entry
+            addRequest.addEventListener('success', () => {
+                titleInput.value = '';
+                bodyInput.value = '';
+            });
+            transaction.addEventListener("complete", () => {
+                console.log("Transaction completed: Database updated");
+                displayData();
+            });
+            transaction.addEventListener("error", () => {
+                console.log("Transaction not opened due to error");
+            })
+        }
+        //----------------------------------------------------------------
+        function displayData() {
+            //list.firstChild => avoid having a duplicate list every time we add a new one.
+            while (list.firstChild) {
+                list.removeChild(list.firstChild);
+            };
+
+            const objectStore = db.transaction('notes_os').objectStore('notes_os');
+            objectStore.openCursor().addEventListener('success', e => {
+                const cursor = e.target.result;
+
+                if (cursor) {
+                    const listItem = document.createElement('li');
+                    const h3 = document.createElement('h3');
+                    const p = document.createElement('p');
+
+                    listItem.appendChild(h3);
+                    listItem.appendChild(p);
+                    list.appendChild(listItem);
+
+                    h3.textContent = cursor.value.title;
+                    p.textContent = cursor.value.body;
+
+                    listItem.setAttribute('data-note-id', cursor.value.id);
+
+                    const deleteBtn = document.createElement('button');
+                    listItem.appendChild(deleteBtn);
+                    deleteBtn.textContent = "Delete";
+
+                    deleteBtn.addEventListener('click', deleteItem);
+
+                    cursor.continue();
+                } else {
+                    if (!list.firstChild) {
+                        const listItem = document.createElement('li');
+                        listItem.textContent = 'No notes stored';
+                        list.appendChild(listItem);
+                    }
+                    console.log('Notes all displayed');
+                }
+
+            })
+        };
+
+        function deleteItem(e) {
+            const noteId = Number(e.target.parentNode.getAttribute('data-note-id'));
+            const transaction = db.transaction(['notes_os'], 'readwrite');
+            const objectStore = transaction.objectStore('notes_os');
+            const deleteResult = objectStore.delete(noteId);
+            transaction.addEventListener('complete', () => {
+                e.target.parentNode.parentNode.removeChild(e.target.parentNode);
+                console.log(`Note ${noteId} deleted.`);
+
+                if (!list.firstChild) {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = "No Notes stored";
+                    list.appendChild(listItem);
+                }
+            });
+        }
+
+    </script>
+</body>
+
+</html>
