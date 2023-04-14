@@ -1,5 +1,5 @@
 ////////////////////////////////////////
-GREEAN A SITE
+GREEN A SITE
 ////////////////////////////////
 
 Here you can find some song lyrics and add your favorite one.
